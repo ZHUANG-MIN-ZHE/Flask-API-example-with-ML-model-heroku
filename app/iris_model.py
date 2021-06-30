@@ -1,6 +1,6 @@
 import pickle
 import gzip
-with gzip.open('../MLmodel/iris_model.pgz', 'r') as f:
+with gzip.open('app/model/iris_model.pgz', 'r') as f:
     Model = pickle.load(f)
 
 def predict(input):
